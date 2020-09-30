@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    
+    <style>
+        .bd-example{position: relative;}
+        .scrollspy-example{    position: relative;
+    height: 800px;
+    margin-top: .5rem;
+    overflow: auto;}
+    </style>
+</head>
+<body>
+    https://codepen.io/celincky/details/zdqso
+
+	<!-- visual_box 開始-->
+    <div class="visual_box">
+        <!-- visual 開始 -->
+        <div class="visual">
+            <p class="intro"></p>
+            <!--音符 開始 -->
+            <em class="icon_1 ani_1"></em>
+            <em class="icon_2 ani_2"></em>
+            <em class="icon_3 ani_3"></em>
+            <em class="icon_2 ani_4"></em>
+            <em class="icon_1 ani_5"></em>
+            <em class="icon_3 ani_6"></em>
+            <em class="icon_3 ani_7"></em>
+            <!--音符 結束 -->
+        </div>
+        <!-- visual 結束-->
+    </div>
+    <!-- visual_box 結束 -->
+    
+    <div class="bd-example">
+        <div class="container">
+            <nav id="navbar-example" class="navbar navbar-light bg-light">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <ul class="nav nav-pills">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#fat">ABOUT ME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#mdo">WORK EXPERIENCE</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#mdo">WORKS</a>
+                  </li>
+                </ul>
+              </nav>
+        </div>
+       <div class="container">
+            <div data-spy="scroll" data-target="#navbar-example" data-offset="0" class="scrollspy-example" >
+                <h4 id="fat">@fat</h4>
+                <p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.</p>
+                <h4 id="mdo">@mdo</h4>
+                <p>Veniam marfa mustache skateboard, adipisicing fugiat velit pitchfork beard. Freegan beard aliqua cupidatat mcsweeney's vero. Cupidatat four loko nisi, ea helvetica nulla carles. Tattooed cosby sweater food truck, mcsweeney's quis non freegan vinyl. Lo-fi wes anderson +1 sartorial. Carles non aesthetic exercitation quis gentrify. Brooklyn adipisicing craft beer vice keytar deserunt.</p>
+                </p>
+            </div>
+       </div>
+    </div>
+   
+</body>
+<!-- <script src="src/js/dist/bundle.js"></script> -->
+<script src="src/js/jquery-3.3.1.min.js"></script>
+<script src="src/js/bootstrap.bundle.min.js"></script>
+<script>
+    $(function(){
+        $("body").scrollspy({
+            target: '.navbar-fixed-top'
+        });
+   
+    });
+</script>
+</html>
