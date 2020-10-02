@@ -43,7 +43,7 @@ function watch() {
       baseDir: "./"
     }
   });
-  gulp.watch('./src/js/*.js', script )
+  // gulp.watch('./src/js/*.js', script )
   gulp.watch('./src/scss/**/*.scss', styles)
   gulp.watch("*.html", reload);
 }
@@ -54,4 +54,4 @@ function reload() {
 
 exports.watch = watch
 exports.styles = styles;
-exports.script = script;
+// exports.script = script;
